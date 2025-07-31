@@ -121,7 +121,7 @@ Freq_t MRCC_xGetSystemClock()
 			case APB_AHB_divided_by_8    : SystemClock.APB1_Freq=SystemClock.System_Freq/8.0; break;
 			case APB_AHB_divided_by_16   : SystemClock.APB1_Freq=SystemClock.System_Freq/16.0; break;
 		}
-		/*	Check APB1 Frequency	*/
+		/*	Check APB2 Frequency	*/
 		switch(RCC_User_cfg.APB2_PRESCALER)
 		{
 			case APB_AHB_not_divided     : SystemClock.APB2_Freq=SystemClock.System_Freq; break;
