@@ -2,7 +2,7 @@
  * RCC_prog.c
  *
  *  Created on: Jul 28, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #include "../../LIB/BIT_MATH.h"
