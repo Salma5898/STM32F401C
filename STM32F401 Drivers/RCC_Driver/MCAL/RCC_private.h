@@ -2,7 +2,7 @@
  * RCC_private.h
  *
  *  Created on: Jul 28, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #ifndef MCAL_MRCC_RCC_PRIVATE_H_
