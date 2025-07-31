@@ -2,7 +2,7 @@
  * RCC_reg.h
  *
  *  Created on: Jul 28, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #ifndef MCAL_MRCC_RCC_REG_H_
