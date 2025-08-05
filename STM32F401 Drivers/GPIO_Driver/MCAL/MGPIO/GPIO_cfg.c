@@ -2,7 +2,7 @@
  * GPIO_cfg.c
  *
  *  Created on: Jul 31, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #include "../../LIB/BIT_MATH.h"
@@ -17,57 +17,58 @@
 
 GPIO_CFG_t Config_Output_Pin_Push_Pull =
 {
-		.Mode        = GPIO_MODE_OUTPUT               ,
-		.OutputSpeed = GPIO_SPEED_LOW     			,
-		.OutputType	 = GPIO_OutputType_PushPull		,
-		.InputPull	 = GPIO_NO_PULL
+		.Mode        	= GPIO_MODE_OUTPUT              ,
+		.OutputSpeed 	= GPIO_SPEED_LOW     		,
+		.OutputType	= GPIO_OutputType_PushPull	,
+		.InputPull	= GPIO_NO_PULL
 };
 
 GPIO_CFG_t Config_Output_Pin_Open_Drain =
 {
-		.Mode         = GPIO_MODE_OUTPUT               ,
-		.OutputSpeed	 = GPIO_SPEED_LOW     			,
-		.OutputType	 = GPIO_OutputType_OpenDrain		,
+		.Mode         	 = GPIO_MODE_OUTPUT             ,
+		.OutputSpeed	 = GPIO_SPEED_LOW     		,
+		.OutputType	 = GPIO_OutputType_OpenDrain	,
 		.InputPull	 = GPIO_NO_PULL
 };
 
 GPIO_CFG_t Config_Input_Pin_No_Pull =
 {
-		.Mode         = GPIO_MODE_INPUT                ,
-		.OutputSpeed	 = GPIO_SPEED_LOW     			,
-		.OutputType	 = GPIO_OutputType_PushPull		,
+		.Mode            = GPIO_MODE_INPUT              ,
+		.OutputSpeed	 = GPIO_SPEED_LOW     		,
+		.OutputType	 = GPIO_OutputType_PushPull	,
 		.InputPull	 = GPIO_NO_PULL
 };
 
 GPIO_CFG_t Config_Input_Pin_Pull_Up =
 {
-		.Mode         = GPIO_MODE_INPUT                ,
-		.OutputSpeed	 = GPIO_SPEED_LOW     			,
-		.OutputType	 = GPIO_OutputType_PushPull		,
+		.Mode            = GPIO_MODE_INPUT              ,
+		.OutputSpeed	 = GPIO_SPEED_LOW     		,
+		.OutputType	 = GPIO_OutputType_PushPull	,
 		.InputPull	 = GPIO_PullUp
 
 };
 
 GPIO_CFG_t Config_Input_Pin_Pull_Down =
 {
-		.Mode        = GPIO_MODE_INPUT                ,
-		.OutputSpeed	= GPIO_SPEED_LOW     			,
-		.OutputType	= GPIO_OutputType_PushPull		,
+		.Mode           = GPIO_MODE_INPUT               ,
+		.OutputSpeed	= GPIO_SPEED_LOW     		,
+		.OutputType	= GPIO_OutputType_PushPull	,
 		.InputPull	= GPIO_PullDown
 };
 
 GPIO_CFG_t Config_Input_Analog =
 {
-		.Mode         = GPIO_MODE_ANALOG               ,
-		.OutputSpeed	 = GPIO_SPEED_LOW     			,
-		.OutputType	 = GPIO_OutputType_PushPull		,
+		.Mode            = GPIO_MODE_ANALOG             ,
+		.OutputSpeed	 = GPIO_SPEED_LOW     		,
+		.OutputType	 = GPIO_OutputType_PushPull	,
 		.InputPull	 = GPIO_NO_PULL
 };
 
 GPIO_CFG_t Config_Pin_Alt =
 {
-		.Mode         = GPIO_MODE_ALF                 	,
-		.OutputSpeed	 = GPIO_SPEED_LOW    				,
-		.OutputType	 = GPIO_OutputType_PushPull		,
+		.Mode            = GPIO_MODE_ALF                ,
+		.OutputSpeed	 = GPIO_SPEED_LOW    		,
+		.OutputType	 = GPIO_OutputType_PushPull	,
 		.InputPull	 = GPIO_NO_PULL
 };
+
