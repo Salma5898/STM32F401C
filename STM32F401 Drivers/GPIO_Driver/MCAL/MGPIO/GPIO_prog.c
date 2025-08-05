@@ -15,11 +15,11 @@
 
 /*
  * The debug pins are in AF pull-up/pull-down after reset:
-• PA15: JTDI in pull-up
-• PA14: JTCK/SWCLK in pull-down
-• PA13: JTMS/SWDAT in pull-up
-• PB4: NJTRST in pull-up
-• PB3: JTDO in floating state
+â€¢ PA15: JTDI in pull-up
+â€¢ PA14: JTCK/SWCLK in pull-down
+â€¢ PA13: JTMS/SWDAT in pull-up
+â€¢ PB4: NJTRST in pull-up
+â€¢ PB3: JTDO in floating state
  */
 
 void MGPIO_voidSetMode	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Mode)
@@ -315,8 +315,9 @@ void MGPIO_voidInit (u8 A_u8PortName, u8 A_u8PinNum, GPIO_CFG_t *A_ptrCfg)
 {
 	MRCC_voidInit();
 	MRCC_voidEnablePeripheral(AHB1_BUS,A_u8PortName);
-	MGPIO_voidSetMode (A_u8PortName,A_u8PinNum, A_ptrCfg->Mode);
-	MGPIO_voidSetOutputType	(A_u8PortName, A_u8PinNum, A_ptrCfg->OutputType);
+	MGPIO_voidSetMode 	 (A_u8PortName, A_u8PinNum, A_ptrCfg->Mode);
+	MGPIO_voidSetOutputType	 (A_u8PortName, A_u8PinNum, A_ptrCfg->OutputType);
 	MGPIO_voidSetOutputSpeed (A_u8PortName, A_u8PinNum, A_ptrCfg->OutputSpeed);
-	MGPIO_voidSetIOPull	(A_u8PortName, A_u8PinNum, A_ptrCfg->InputPull);
+	MGPIO_voidSetIOPull	 (A_u8PortName, A_u8PinNum, A_ptrCfg->InputPull);
 }
+
