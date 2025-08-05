@@ -36,7 +36,7 @@ typedef struct
 
 /*		GPIO_PUPDR (PullUp/Down)		*/
 #define GPIO_NO_PULL			0b00
-#define GPIO_PullUp				0b01
+#define GPIO_PullUp			0b01
 #define GPIO_PullDown			0b10
 
 /*		GPIO_ODR 	(Output Value)		*/
@@ -97,4 +97,5 @@ void MGPIO_voidSetAltFun	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8AltFun);
 void MGPIO_voidInit		(u8 A_u8PortName, u8 A_u8PinNum, GPIO_CFG_t *A_ptrCfg);
 
 #endif /* MCAL_MGPIO_GPIO_INIT_H_ */
+
 
