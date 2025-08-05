@@ -2,7 +2,7 @@
  * RCC_private.h
  *
  *  Created on: Jul 28, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #ifndef MCAL_MRCC_RCC_PRIVATE_H_
@@ -11,11 +11,11 @@
 
 
 /*		RCC_CR bits		*/
-#define HSION	0
-#define HSEON	16
+#define HSION	  0
+#define HSEON	  16
 #define HSEBYP	18		//bypassed with an external clock
-#define CSSON	19
-#define PLLON	24
+#define CSSON	  19
+#define PLLON	  24
 
 /*		RCC_PLLCFGR bits		*/
 #define PLL_M0	0
@@ -26,8 +26,9 @@
 /*		RCC_CFGR bits			*/
 #define SW0		0
 #define SW1		1
-#define HPRE	4	//AHB Prescaler
+#define HPRE	4	  //AHB Prescaler
 #define PPRE1	10	//APB1 Prescaler
 #define PPRE2	13	//APB2 Prescaler
 
 #endif /* MCAL_MRCC_RCC_PRIVATE_H_ */
+
