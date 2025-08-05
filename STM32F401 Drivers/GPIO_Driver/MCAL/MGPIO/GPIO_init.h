@@ -2,7 +2,7 @@
  * GPIO_init.h
  *
  *  Created on: Jul 31, 2025
- *      Author: Salma
+ *      Author: Salma Hisham
  */
 
 #ifndef MCAL_MGPIO_GPIO_INIT_H_
@@ -11,7 +11,7 @@
 /*		User Configurations	Parameters		*/
 typedef struct
 {
-	u8 Mode			;
+	u8 Mode		;
 	u8 OutputType	;
 	u8 OutputSpeed	;
 	u8 InputPull	;
@@ -86,14 +86,15 @@ typedef struct
 #define GPIO_PIN14	  14
 #define GPIO_PIN15	  15
 
-void MGPIO_voidSetMode			(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Mode);
+void MGPIO_voidSetMode		(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Mode);
 void MGPIO_voidSetOutputType	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Type);
 void MGPIO_voidSetOutputSpeed	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Speed);
-void MGPIO_voidSetIOPull		(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Pull);
+void MGPIO_voidSetIOPull	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Pull);
 void MGPIO_voidSetOutputValue	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8Value);
-u8 	 MGPIO_u8ReadInputValue		(u8 A_u8PortName, u8 A_u8PinNum);
+u8   MGPIO_u8ReadInputValue	(u8 A_u8PortName, u8 A_u8PinNum);
 void MGPIO_voidTogOutputValue	(u8 A_u8PortName, u8 A_u8PinNum);
-void MGPIO_voidSetAltFun		(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8AltFun);
-void MGPIO_voidInit				(u8 A_u8PortName, u8 A_u8PinNum, GPIO_CFG_t *A_ptrCfg);
+void MGPIO_voidSetAltFun	(u8 A_u8PortName, u8 A_u8PinNum, u8 A_u8AltFun);
+void MGPIO_voidInit		(u8 A_u8PortName, u8 A_u8PinNum, GPIO_CFG_t *A_ptrCfg);
 
 #endif /* MCAL_MGPIO_GPIO_INIT_H_ */
+
