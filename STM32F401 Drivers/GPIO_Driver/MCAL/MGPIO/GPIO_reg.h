@@ -2,7 +2,7 @@
  * GPIO_reg.h
  *
  *  Created on: Jul 31, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #ifndef MCAL_MGPIO_GPIO_REG_H_
@@ -32,3 +32,4 @@ typedef struct
 #define GPIOC ( (volatile GPIO_MemoryMap_t*)(GPIOC_BASE_ADDRESS) )
 
 #endif /* MCAL_MGPIO_GPIO_REG_H_ */
+
