@@ -2,7 +2,7 @@
  * RCC_prog.c
  *
  *  Created on: Jul 28, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #include "../../LIB/BIT_MATH.h"
@@ -15,18 +15,18 @@
 extern RCC_CFG_t RCC_User_cfg;
 void MRCC_voidInit()
 {
-	/*************** Clock security system enable ***************/
+	/*************** Clock security system enable   ***************/
 	CLR_BIT(RCC->CR,CSSON);
 	RCC->CR |= (RCC_User_cfg.CSS_ENABLE)<<CSSON;
 
-	/*************** Disable HSE Bypass ***************/
+	/*************** 	Disable HSE Bypass 	***************/
 	CLR_BIT(RCC->CR,HSEBYP);
 
 	/***************	PLL Configurations	***************/
 	//M, N, P values
 	RCC->PLLCFGR = 	( (RCC_User_cfg.PLL_M) << PLL_M0 )	|
-					( (RCC_User_cfg.PLL_N) << PLL_N0 )	|
-					( (RCC_User_cfg.PLL_P) << PLL_P0 );
+			( (RCC_User_cfg.PLL_N) << PLL_N0 )	|
+			( (RCC_User_cfg.PLL_P) << PLL_P0 );
 	//PLL source
 	CLR_BIT(RCC->PLLCFGR,PLL_SRC);
 	RCC->PLLCFGR |= ((RCC_User_cfg.PLL_SOURCE) << PLL_SRC);
@@ -46,11 +46,10 @@ void MRCC_voidInit()
 	RCC->CFGR |= (RCC_User_cfg.CLOCK_SOURCE)<<SW0;
 
 	/*************** 	ENABLE/DISABLE HSE, PLL ***************/
-
 	CLR_BIT(RCC->CR,HSEON);
 	CLR_BIT(RCC->CR,PLLON);
 	RCC->CR |= (	(RCC_User_cfg.HSE_ENABLE)<<HSEON |
-					(RCC_User_cfg.PLL_ENABLE)<<PLLON );
+			(RCC_User_cfg.PLL_ENABLE)<<PLLON );
 }
 void MRCC_voidEnablePeripheral	(u8 A_u8BusID, u8 A_u8PeripheralNum)
 {
@@ -123,3 +122,4 @@ Freq_t MRCC_xGetSystemClock()
 		}
 	return SystemClock;
 }
+
