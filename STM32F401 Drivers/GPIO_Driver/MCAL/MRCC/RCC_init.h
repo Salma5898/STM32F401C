@@ -2,7 +2,7 @@
  * RCC_init.h
  *
  *  Created on: Jul 28, 2025
- *      Author: samsung
+ *      Author: Salma Hisham
  */
 
 #ifndef MCAL_MRCC_RCC_INIT_H_
@@ -90,18 +90,17 @@
 /*	RCC configurations (The user can control)	*/
 typedef struct
 {
-//	u8  HSI_ENABLE		;
 	u8  HSE_ENABLE		;
 	u8  PLL_ENABLE		;
 	u8  CSS_ENABLE		;
 	u8  CLOCK_SOURCE	;
-	u8 	PLL_SOURCE		;
-	u8	AHB_PRESCALER	;
-	u8	APB1_PRESCALER	;
-	u8	APB2_PRESCALER	;
-	u8  PLL_P			;
-	u8  PLL_M			;
-	u16 PLL_N			;
+	u8  PLL_SOURCE		;
+	u8  AHB_PRESCALER	;
+	u8  APB1_PRESCALER	;
+	u8  APB2_PRESCALER	;
+	u8  PLL_P		;
+	u8  PLL_M		;
+	u16 PLL_N		;
 
 }RCC_CFG_t;
 
@@ -121,3 +120,4 @@ Freq_t MRCC_xGetSystemClock	(void);
 
 
 #endif /* MCAL_MRCC_RCC_INIT_H_ */
+
